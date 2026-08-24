@@ -1,0 +1,244 @@
+/* 
+  Custom Styles for ÄąÂukasz ÄąĹˇliwiÄąâ€žski - Ekspert Finansowy
+  Minimalist, elegant, and modern design.
+*/
+
+:root {
+    --primary-color: #064E3B; /* Forest Green */
+    --accent-color: #D1A77E; /* Warm Beige */
+    --accent-color-hover: #C1966B;
+    --bg-light: #FDFBF7;
+    --text-dark: #111827;
+    --text-muted: #4B5563;
+}
+
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-dark);
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.transition-navbar {
+    transition: all 0.4s ease-in-out;
+    background-color: transparent !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
+.transition-navbar.scrolled {
+    background-color: rgba(6, 78, 59, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.transition-navbar.scrolled .navbar-brand img {
+    margin-top: -8px;
+    margin-bottom: -8px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--accent-color);
+}
+
+.btn-contact-nav {
+    border: 2px solid var(--accent-color);
+    border-radius: 50px;
+    color: var(--accent-color) !important;
+    transition: all 0.3s;
+}
+
+.btn-contact-nav:hover {
+    background-color: var(--accent-color);
+    color: #fff !important;
+}
+
+/* Colors and Utilities */
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.bg-primary-dark {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-light-custom {
+    background-color: var(--bg-light) !important;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-accent:hover {
+    background-color: var(--accent-color-hover);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #022C22 100%);
+    color: #fff;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.hero-title {
+    letter-spacing: -1px;
+}
+
+.text-muted-hero {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.hero-avatar {
+    max-width: 100%;
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border: 8px solid rgba(255,255,255,0.1);
+    transition: transform 0.5s ease;
+}
+
+.hero-avatar:hover {
+    transform: scale(1.02);
+}
+
+/* Custom Card (Why Me) */
+.custom-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08) !important;
+}
+
+.border-accent {
+    border-color: var(--accent-color) !important;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(rgba(6, 78, 59, 0.9), rgba(6, 78, 59, 0.9)), url('/images/mortgage_final.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+/* Footer & Socials */
+.bg-white-10 {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-link:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.text-white-75 {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Scroll Animations */
+.reveal-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* Grayscale Hover for Trust Indicators */
+.grayscale-hover > * {
+    transition: all 0.3s ease;
+    filter: grayscale(100%) opacity(0.7);
+}
+
+.grayscale-hover > *:hover {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.05);
+}
+
+/* Links */
+.icon-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.icon-link:hover {
+    transform: translateX(5px);
+}
+
+/* Media Queries */
+@media (max-width: 991.98px) {
+    .transition-navbar {
+        background-color: rgba(6, 78, 59, 0.98) !important;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    
+    .transition-navbar.scrolled {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    
+    .hero-avatar {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .hero-section {
+        min-height: auto;
+        padding-top: 120px;
+    }
+    
+    .btn-contact-nav {
+        margin-top: 15px;
+        text-align: center;
+        border-color: transparent;
+        background-color: var(--accent-color);
+        color: #fff !important;
+    }
+}
+
+
+
+/* Solid Navbar for pages without hero images */
+.solid-navbar {
+    background-color: rgba(6, 78, 59, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.solid-navbar .navbar-brand img {
+    margin-top: -8px;
+    margin-bottom: -8px;
+}
+
+

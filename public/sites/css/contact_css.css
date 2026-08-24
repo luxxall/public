@@ -1,0 +1,344 @@
+.bg {
+  margin: 0;
+  background-color: white;
+}
+
+.topnav {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 17, 45);
+  top: 0;
+  z-index: 1;
+  position: fixed;
+}
+  
+.menu {
+  float: right;
+}
+  
+.menu a {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 30px 20px;
+  text-decoration: none;
+}
+  
+.menu a:hover {
+  scale: 110%;
+  color: white;
+}
+
+.logo a {
+  display: grid;
+  float: left;
+  padding-left: 20px;
+  margin-top: -10px;
+}
+
+#logo {
+  position: absolute;
+  max-width: 120%;
+  max-height: 120%;
+}
+
+.container {
+  background-color: rgb(247, 244, 244);
+  margin-top: 6%;
+  height: 595px;
+  min-width: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.links {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.line2 {
+  margin-top: 60px;
+  margin-left: 30%;
+  border: 4px solid gray;
+  color: gray;
+  width: 40%;
+}
+
+.linksHead {
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.firstBlock {
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+
+.infoMail {
+  text-decoration: none;
+  color: black;
+  max-width: 60%;
+}
+
+.info:hover, .infoMail:hover {
+  color: orange;
+}
+
+.contact2 {
+  margin-left: 20%;
+  padding-top: 30px;
+  text-align: center;
+  width: 60%;
+}
+
+.contact_line1 {
+  font-size: 100px;
+  color: black;
+  text-align: center;
+  position: absolute;
+  top: 13%;
+  left: 37%;
+  animation: slideIn 2s forwards;
+}
+@keyframes slideIn {
+  to {
+    top: 20%; /* Docelowe położenie */
+  }
+}
+
+.line {
+  color: black;
+  border: 5px solid black;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 20%
+}
+
+.contact_form {
+  text-align: left;
+  margin-bottom: 10%;
+  width: 100%;
+}
+
+.contact_form input {
+  padding: 7px 20px;
+  outline: none;
+  border: 2px solid rgb(247, 244, 244);
+  border-bottom: 2px solid black;
+  font-size: 12px;
+  background-color: rgb(247, 244, 244);
+  margin-bottom: 10px;
+  width: 100%;
+  color: black;
+}
+
+.contact_form textarea {
+  padding: 7px 20px;
+  outline: none;
+  border-color: rgb(247, 244, 244);
+  border-bottom: 2px solid black;
+  font-size: 12px;
+  color: black;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  background-color: rgb(247, 244, 244);
+}
+
+.contact_form button {
+  margin-left: 25%;
+  font-size: 19px;
+  width: 50%;
+  border: 2px solid orange;
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: orange;
+  color: rgba(0, 17, 45);
+  cursor: pointer;
+  transition: 0.2 ease-in-out;
+}
+
+.contact_form button:hover {
+  background-color: rgb(247, 244, 244);
+  color: black;
+  border: 2px solid black;
+}
+
+/* this found on dev.to */
+.appear2 {
+  transition: all 1s;
+  opacity: 0;
+  transform: translateY(20px);
+
+&.inview2 {
+    opacity: 1;
+    transform: none;
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        transition-delay: $i * 0.1s;
+    }
+  }
+}
+}
+
+.footer {
+  background-color: rgb(247, 244, 244);
+  height: 280px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.footerText {
+  text-align: center;
+  position: absolute;
+  font-size: 20px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 50%;
+}
+
+.socials {
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 20px solid black;
+  border-radius: 13px;
+  background-color: black;
+}
+
+.socialsA {
+  padding-left: 15px;
+}
+
+.socialsImg {
+  max-width: 60px;
+  max-height: auto;
+}
+
+.socialsImg:hover {
+  scale: 110%;
+}
+
+.last {
+  text-align: center;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 80%;
+  font-size: 13px;
+}
+
+.lastLink {
+  text-decoration: none;
+  color: black;
+}
+
+.lastLink:hover {
+  background-color: rgb(247, 244, 244);
+  color: black;
+}
+@media screen and (max-width: 600px) {
+  ul.topnav, ul.topnav li {
+    float: block;
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+  
+  #logo {
+    margin-top: 5px;
+    padding-left: 0px;
+    margin-left: -20px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .container {
+    margin-top: 15%;
+  }
+  
+  .menu a {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+.linksHead {
+  padding-bottom: 60px;
+  font-size: 20px;
+}
+
+.linksHead {
+  padding-bottom: 20px;
+}
+
+.firstBlock {
+  font-size: 20px;
+  padding-bottom: 40px;
+}
+
+#arrow2 {
+  padding-top: 50px;
+}
+
+.contact2 {
+  width: 100%;
+  padding-bottom: 20px;
+  margin-left: 0;
+}
+
+.contact_line1 {
+  padding-top: 20px;
+  font-size: 60px;
+  width: 100%;
+  top: 12%;
+  left: 0;
+}
+@keyframes slideIn {
+  to {
+    top: 14%
+  }
+}
+
+.contact_form {
+  width: 95%;
+  padding-left: 5%;
+}
+
+.line {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 35%
+}
+
+.footerText {
+  font-size: 18px;
+  width: 80%;
+}
+
+.socials {
+  border: 5px solid black;
+  width: 90%;
+}
+
+.socialsA {
+  padding-left: 10px;
+}
+
+.socialsImg {
+  max-width: 49px;
+  max-height: auto;
+}
+
+}
