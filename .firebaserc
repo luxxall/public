@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "lukaszsliwinski-96981"
+  },
+  "targets": {
+    "lukaszsliwinski-96981": {
+      "hosting": {
+        "lukaszsliwinski": [
+          "lukaszsliwinski"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

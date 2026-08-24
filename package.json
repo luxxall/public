@@ -1,0 +1,14 @@
+﻿{
+  "name": "lukasz-sliwinski-web",
+  "version": "1.0.0",
+  "scripts": {
+    "login": "node ./node_modules/firebase-tools/lib/bin/firebase.js login",
+    "projects": "node ./node_modules/firebase-tools/lib/bin/firebase.js projects:list",
+    "use": "node ./node_modules/firebase-tools/lib/bin/firebase.js use --add",
+    "serve": "node ./node_modules/firebase-tools/lib/bin/firebase.js serve --only hosting",
+    "deploy": "node ./node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.28.1"
+  }
+}
