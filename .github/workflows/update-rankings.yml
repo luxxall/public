@@ -39,3 +39,4 @@ jobs:
         git add public/sites/projects.html
         git diff-index --quiet HEAD || git commit -m "Automated update of rankings data"
         git push
+
