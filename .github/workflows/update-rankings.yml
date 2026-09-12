@@ -52,3 +52,11 @@ jobs:
         else
           echo "Brak zmian w tabeli rankingów - pomijanie commita."
         fi
+
+    - name: Deploy to Firebase Hosting
+      uses: FirebaseExtended/action-hosting-deploy@v0
+      with:
+        repoToken: '${{ secrets.GITHUB_TOKEN }}'
+        firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MY_WAY_TO_IT }}'
+        channelId: live
+        projectId: my-way-to-it
